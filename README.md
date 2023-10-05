@@ -2,6 +2,8 @@
 
 2023.10.2 last edited
 
+![Rustlings Finished](https://github.com/ye-junzhe/Images/blob/main/rustlings/rustlings.jpg?raw=true)
+
 ## Exercise to Book Chapter mapping
 
 | Exercise               | Book Chapter        |
