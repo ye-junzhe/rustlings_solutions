@@ -60,16 +60,9 @@ impl From<&str> for Person {
 
         match concatenated.split_once(',') {
             Some((first, second)) => {
-                if first.is_empty() {
-                    Person::default()
-                } else if let Ok(a) = second.parse::<usize>() {
-                    Person {
-                        name: first.into(),
-                        age: a,
-                    }
-                } else {
-                    Person::default()
-                }
+                if first.is_empty() { Person::default() }
+                else if let Ok(a) = second.parse::<usize>() { Person { name: first.into(), age: a, } }
+                else { Person::default() }
             }
             _ => Person::default(),
         }
